@@ -9,7 +9,7 @@ let app = express(); //server
 let PORT = process.env.PORT || 8080;
 
 app.use(express.json()) // parse
-app.use(cors())
+app.use(cors());
 
 app.get("/", (req, res) => {
     res.send("Home page")
