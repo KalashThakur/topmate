@@ -17,7 +17,7 @@ export const Signup = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         let payload = {name, email, password}
-        axios.post("http://localhost:8080/user/signup", payload)
+        axios.post("https://topmate.onrender.com/user/signup", payload)
         .then((res) => {
             console.log("res", res)
             navigate("/login")
