@@ -44,7 +44,28 @@ const DisplayData = () => {
                   </div>
 
                   {/* bottom */}
-                  <div className={style.bottom}></div>
+                  <div className={style.bottom}>
+                    <div className={style.bottom2}>
+                       <div className={style.innerDiv}>
+                        <div className={style.innerDivSlots}>
+                          {/* 1 */}
+                          <div className={style.innerDivSlots1}>
+                            <div className={style.innerDivSlots2}>
+                              <div className={style.innerDivSlotText}>Default</div>
+                              <div className={style.innerSlot1Div}>
+                                <div className={style.innerSlot1Div2}>
+                                  <button className={style.innerSlot1Btn}>
+                                    <span className={style.innerSlot1Text}>Save</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          {/* 2 */}
+                        </div>
+                       </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

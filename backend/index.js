@@ -1,6 +1,7 @@
 let express = require("express");
 require('dotenv').config();
 const userController = require("./routes/user.route");
+const UserSlotController = require("./routes/schedule.route");
 const connection = require("./Config/db");
 const cors = require("cors");
 const  authentication = require("./middlewares/authentication");
@@ -18,6 +19,9 @@ app.get("/", (req, res) => {
 app.use("/user", userController);
 
 app.use(authentication);
+
+app.use("/schedule", UserSlotController);
+
 
 app.listen(PORT, async() => {
     try{
