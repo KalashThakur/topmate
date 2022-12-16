@@ -27,7 +27,7 @@ const HomePageWrapper = styled.div`
 
 const LeftMenuWrapper = styled.div`
   /* width: 350px; */
-  border: 3px solid black;
+  /* border: 3px solid black; */
   margin-right: 40px;
 
   max-width: 288px;
@@ -52,7 +52,7 @@ const LeftMenuWrapper = styled.div`
 
 const DisplayBoxWrapper = styled.div`
   width: 100%;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, max-content)); //fit for every sce
   grid-gap: 16px;
