@@ -216,16 +216,18 @@ button{
 }
 
 .innerDivSlots{
-
+    border: 2px solid black;
 }
 
 .innerDivSlots1{
+    display: flex;
+    justify-content: space-between;
 
 }
 
 .innerDivSlots2{
     display: flex !important;
-    /* border: 2px solid black; */
+    border: 2px solid blue;
     align-items: center;
     justify-content: space-between;
     padding: 24px;
