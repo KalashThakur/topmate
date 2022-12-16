@@ -6,7 +6,7 @@ var jwt = require('jsonwebtoken');
 
 //SIGNUP
 userController.post("/signup", (req, res) => {
-    const {email, password, age} = req.body;
+    const {email, password, name} = req.body;
     bcrypt.hash(password, 5, async(err, hash) => {
         if(err) {
             res.send("Login failed")
@@ -15,7 +15,7 @@ userController.post("/signup", (req, res) => {
             const user = new UserModel({
                 email,
                 password: hash,
-                age
+                name
             })
             try{
                 await user.save();

@@ -1,0 +1,204 @@
+body{
+    font-family: "Gilroy", -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #141414;
+    font-size: 14px;
+    line-height: 1.17;
+}
+
+.container{
+    height: 100%;
+    margin-top: -0.1px;
+    padding-top: 0.1px;
+    box-sizing: border-box;
+}
+
+a{
+    touch-action: manipulation;
+    color: #008060;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.infoContainer{
+    margin-top: 20px;
+    margin-bottom: 1px;
+    color: #141414;
+    overflow-wrap: break-word;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.name{
+    gap: 8px;
+    align-items: center;
+    display: flex !important;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.logo2{
+
+}
+
+.handImg{
+    width: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.logo2img{
+    border-radius: 50%;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.userInfo{
+
+}
+
+.inneruserDiv{
+    color: #141414;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.userLink{
+    font-size: 14px;
+    line-height: 1.125rem;
+    font-weight: 700;
+    white-space: break-spaces;
+    word-break: break-word;
+    
+}
+
+span{
+    color: #141414;
+    overflow-wrap: break-word;
+}
+
+/* horizontal line */
+.divider{
+    display: flex;
+    clear: both;
+    width: 100%;
+    min-width: 100%;
+    padding: 0;
+    color: #141414;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.17;
+    list-style: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* profile button */
+
+.btnDiv{
+    padding: 12px 16px 16px 12px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f3f3f1;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+}
+
+/* list */
+.list{
+    box-shadow: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-variant: tabular-nums;
+    font-feature-settings: 'tnum', "tnum";
+    margin-bottom: 0;
+    padding-left: 0;
+    color: #141414;
+    font-size: 14px;
+    line-height: 0;
+    text-align: left;
+    list-style: none;
+    background: #fff;
+    outline: none;
+    transition: background 0.3s, width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+    background-color: #fbf9f9 !important;
+    border: none !important;
+}
+
+.listitems{
+    margin-bottom: 8px;
+    line-height: 40px;
+    margin-top: 4px;
+    padding: 0 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    height: 44px !important;
+    background: none !important;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: border-color 0.3s, background 0.3s, padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.listSpan{
+    transition: color 0.3s;
+    font-size: 14px;
+}
+
+.menuLink{
+    padding: 9px 12px !important;
+    margin: 0 0 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuLink > span{
+    font-size: 15px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    color: #141414;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.active{
+    background-color: #ebebeb !important;
+    transition: all 0.5s ease-in-out;
+    color: #0a171f;
+    font-weight: 600;
+    pointer-events: none;
+    padding: 9px 12px !important;
+    margin: 0 0 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}

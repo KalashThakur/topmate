@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    font-family: "Gilroy", -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body{
+    color: #141414;
+    font-size: 14px;
+}
+
+.container{
+    float: right;
+    width: calc(100% - 288px);
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.container2{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 0;
+    justify-content: center;
+}
+
+.container3{
+    position: relative;
+    min-height: 1px;
+}
+
+.upperDiv{
+    padding: 24px 0 20px 0;
+    border-bottom: 1px solid #e3e8ed;
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 0;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 4.16666667%;
+}
+
+h4{
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 34px;
+}
+
+.headContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 4.16666667%;
+    max-width: 91.66666667%;
+}
+
+.headText{
+    color: #141414;
+    overflow-wrap: break-word;
+    display: flex;
+    align-items: center;
+}
+
+.activeBtn{
+    border-width: 2px;
+    background-color: #f7f7f7;
+    border-color: #141414;
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+    margin-right: 12px;
+    border: 1px solid #141414;
+    cursor: pointer;
+    border-radius: 22px;
+    display: inline-flex;
+    align-items: center;
+    height: 42px;
+    padding: 0 24px;
+}
+
+.activeText{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    color: #141414;
+    overflow-wrap: break-word;
+}
+
+a{
+    color: #008060;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.inactiveBtn{
+    border: 1px solid #141414;
+    cursor: pointer;
+    border-radius: 22px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    height: 42px;
+    padding: 0 24px;
+}
+
+.inactiveText{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #141414;
+    overflow-wrap: break-word;
+}

@@ -10,12 +10,13 @@ import styled from "styled-components";
 
 export const Signup = () => {
     const [email, setEmail] = useState("");
+    const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        let payload = {email, password}
+        let payload = {name, email, password}
         axios.post("http://localhost:8080/user/signup", payload)
         .then((res) => {
             console.log("res", res)
@@ -34,6 +35,16 @@ export const Signup = () => {
       <h1>Signup</h1>
       <Box component="form" onSubmit={handleSubmit}>
         {/* <label htmlFor="">Email</label> */}
+        <TextField 
+        type="text" 
+        required 
+        placeholder="john"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        />
+      
+        <br />
+
         <TextField 
         type="email" 
         required 
